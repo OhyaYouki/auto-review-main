@@ -22,6 +22,7 @@ slack上のレビュー依頼のスレッドにチェック結果を自動で送
 
 **◎高校生のチャンネルのレビュー依頼をチェックする場合**  
 =>`python auto_review_on_slack_hs_A.py`を実行。 
+
 =>`python auto_review_on_slack_hs_B.py`を実行。 
 
 **◎手動でレビュー依頼をチェックする場合**  
