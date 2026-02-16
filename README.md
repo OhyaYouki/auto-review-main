@@ -13,12 +13,16 @@ slack上のレビュー依頼のスレッドにチェック結果を自動で送
 
 # 使い方
 **◎tc_e転職_reviews14-22のレビュー依頼をチェックする場合**  
-=>`auto_review_on_slack_tc.py`を実行。  
+=>`python auto_review_on_slack_tc.py`を実行。  
 （10秒ごとに最新のレビュー依頼がないかチェックします） 
 
 **◎rs_review_mentorsのレビュー依頼をチェックする場合**  
-=>`auto_review_on_slack_rs.py`を実行。  
+=>`python auto_review_on_slack_rs.py`を実行。  
 （10秒ごとに最新のレビュー依頼がないかチェックします） 
+
+**◎高校生のチャンネルのレビュー依頼をチェックする場合**  
+=>`python auto_review_on_slack_hs_A.py`を実行。 
+=>`python auto_review_on_slack_hs_B.py`を実行。 
 
 **◎手動でレビュー依頼をチェックする場合**  
 =>`main.py`を実行  
