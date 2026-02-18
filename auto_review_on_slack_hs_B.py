@@ -97,7 +97,8 @@ def review_check(oldest):
             try:
                 # CLIENT.chat_postMessage(channel=SEND_CHANNEL_ID, thread_ts=oldest, text="自動チェック中にエラーが発生しました", icon_emoji=':robot_face:', username='自動レビューbot')
                 error_details = f"自動チェック中にエラーが発生しました\n```\nエラー種別: {type(sys.exc_info()[1]).__name__}\nエラー内容: {str(sys.exc_info()[1])}\nURL: {pull_url if 'pull_url' in locals() else 'URL取得前'}\n発生箇所: {traceback.format_exc().split('File')[-1].strip()}\n```"
-                CLIENT.chat_postMessage(channel=SEND_CHANNEL_ID, thread_ts=oldest, text=error_details, icon_emoji=':robot_face:', username='自動レビューbot')
+                print(error_details)
+                # CLIENT.chat_postMessage(channel=SEND_CHANNEL_ID, thread_ts=oldest, text=error_details, icon_emoji=':robot_face:', username='自動レビューbot')
                 driver.quit()
             except:
                 continue
